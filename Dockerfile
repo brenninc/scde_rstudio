@@ -8,9 +8,16 @@ RUN echo "deb http://mirrors.ebi.ac.uk/CRAN/bin/linux/ubuntu trusty/" >> /etc/ap
 #Install curl, R, and R packages
 RUN apt-get update  && apt-get install -y --force-yes \
     curl
-    
+
 #Install R packages
 RUN apt-get install -y --force-yes \
+    Libx11-dev \
+    libxrender-dev \ 
+    libxext-dev \
+    libxcb1-dev \
+    libxcb-render0-dev \ 
+    libxcb-shm0-dev \   
+    libx11-dev \
     libcairo2-dev \
     libxt-dev \
     r-cran-colorspace \
