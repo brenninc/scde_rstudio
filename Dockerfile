@@ -11,7 +11,7 @@ RUN apt-get update  && apt-get install -y --force-yes \
 
 #Install R packages
 RUN apt-get install -y --force-yes \
-    Libx11-dev \
+    libx11-dev \
     libxrender-dev \ 
     libxext-dev \
     libxcb1-dev \
